@@ -22,7 +22,7 @@ if not OPENAI_API_KEY:
 
 async def connect_to_openai():
     """Connect to OpenAI's WebSocket endpoint."""
-    uri = "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17"
+    uri = "wss://api.openai.com/v1/realtime?model=gpt-realtime"
 
     try:
         ws = await connect(
